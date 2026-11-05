@@ -1,6 +1,8 @@
+args:= "-g -Wall -framework AppKit"
+
 build:
     mkdir -p build
-    clang++ -g -Wall src/osx_main.mm -o build/osx_main
+    clang++ {{args}} src/osx_main.mm -o build/osx_main
 
 run:
     ./build/osx_main
