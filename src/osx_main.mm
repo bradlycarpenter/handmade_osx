@@ -34,6 +34,10 @@ int main(int argc, const char **argv) {
   [window setBackgroundColor:NSColor.blackColor];
   [window setTitle:@"Handmade Hero"];
   [window makeKeyAndOrderFront:nil];
+  [NSApplication sharedApplication];
+  [NSApp setActivationPolicy:NSApplicationActivationPolicyRegular];
+  [NSApp activateIgnoringOtherApps:true];
+
   HandmadeWindowDelegate *windowDelegate =
       [[HandmadeWindowDelegate alloc] init];
   [window setDelegate:windowDelegate];
