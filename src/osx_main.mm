@@ -1,7 +1,25 @@
 #include <AppKit/AppKit.h>
 #include <stdio.h>
 
+static float GlobalRenderingWidth = 1024;
+static float GlobalRenderingHeight = 768;
+
 int main(int argc, const char **argv) {
+  NSRect screenRect = [[NSScreen mainScreen] frame];
+
+  NSRect windowRect =
+      NSMakeRect((screenRect.size.width - GlobalRenderingWidth) * 0.5,
+                 (screenRect.size.height - GlobalRenderingHeight) * 0.5,
+                 GlobalRenderingWidth, GlobalRenderingHeight);
+
+  NSWindow *window = [[NSWindow alloc]
+      initWithContentRect:windowRect
+                styleMask:NSWindowStyleMaskTitled | NSWindowStyleMaskClosable |
+                          NSWindowStyleMaskMiniaturizable |
+                          NSWindowStyleMaskResizable
+                  backing:NSBackingStoreBuffered
+                    defer:false];
+
   while (true) {
     NSEvent *event;
     do {
