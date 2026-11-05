@@ -31,7 +31,7 @@
       },
       "build-tool-path": "/opt/homebrew/bin/just",
       "build-tool-arguments": "$(ACTION)",
-      "build-tool-working-directory": "/Users/bradly/code/handmade_osx/build",
+      "build-tool-working-directory": "$(PROJECT_DIR)/../build",
     },
   ],
   "build-settings": {

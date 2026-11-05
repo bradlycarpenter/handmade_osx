@@ -42,7 +42,7 @@
       queueDebuggingEnabled = "No">
       <PathRunnable
          runnableDebuggingMode = "0"
-         FilePath = "/Users/bradly/code/handmade_osx/build/osx_main">
+         FilePath = "$(PROJECT_DIR)/../build/osx_main">
       </PathRunnable>
    </LaunchAction>
    <ProfileAction
