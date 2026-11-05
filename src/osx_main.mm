@@ -1,4 +1,4 @@
-#include <Appkit/AppKit.h>
+#include <AppKit/AppKit.h>
 #include <stdio.h>
 
 int main(int argc, const char **argv) {
