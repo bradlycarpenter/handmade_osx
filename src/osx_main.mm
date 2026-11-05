@@ -4,6 +4,7 @@
 static float GlobalRenderingWidth = 1024;
 static float GlobalRenderingHeight = 768;
 
+static bool Running = true;
 int main(int argc, const char **argv) {
   NSRect screenRect = [[NSScreen mainScreen] frame];
 
@@ -24,7 +25,7 @@ int main(int argc, const char **argv) {
   [window setTitle:@"Handmade Hero"];
   [window makeKeyAndOrderFront:nil];
 
-  while (true) {
+  while (Running) {
     NSEvent *event;
     do {
       event = [NSApp nextEventMatchingMask:NSEventMaskAny
