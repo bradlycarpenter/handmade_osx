@@ -51,5 +51,5 @@ int main(int argc, const char **argv) {
       }
     } while (event != nil);
   }
-  printf("Handmade hero finished running!");
+  printf("Game has closed");
 }
