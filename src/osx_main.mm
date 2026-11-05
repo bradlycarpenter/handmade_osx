@@ -20,7 +20,7 @@ int main(int argc, const char **argv) {
                   backing:NSBackingStoreBuffered
                     defer:false];
 
-  [window setBackgroundColor:NSColor.redColor];
+  [window setBackgroundColor:NSColor.blackColor];
   [window setTitle:@"Handmade Hero"];
   [window makeKeyAndOrderFront:nil];
 
