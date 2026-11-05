@@ -20,6 +20,10 @@ int main(int argc, const char **argv) {
                   backing:NSBackingStoreBuffered
                     defer:false];
 
+  [window setBackgroundColor:NSColor.redColor];
+  [window setTitle:@"Handmade Hero"];
+  [window makeKeyAndOrderFront:nil];
+
   while (true) {
     NSEvent *event;
     do {
